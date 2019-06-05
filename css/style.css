@@ -1,0 +1,97 @@
+body
+{	width:100%;
+	font-family: 'Arvo', serif;
+	margin: 0;
+	padding: 0;
+	background-color: #ECDDBF;
+}
+
+
+h1
+{text-align: center;
+margin-top: 20px;
+}
+
+
+.corps {
+
+	background:url(../images/corps.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	height: 550px;
+	width: 100%;
+  position: relative;
+  background-size: contain;
+
+	}
+/*{
+position: absolute;
+left: 46%;
+}*/
+
+#rond{
+	width: 20px;
+	height: 20px;
+	background-color: black;
+	border-radius: 50%;
+	position: relative;	
+	opacity: 0.5;
+	transition: 0.5s;
+
+}
+#rond:hover{
+	opacity: 1;
+
+
+
+}
+.rond_tete
+{
+	left: 49%;
+	top:29px;
+}
+
+.rond_coeur
+{
+	left: 49%;
+	top:80px;
+}
+
+
+.rond_bras
+{
+	left: 54%;
+	top:123px;
+}
+
+.rond_jambe
+{
+	left: 47%;
+	top:290px;
+}
+#descriptif_tete, #descriptif_coeur, #descriptif_bras, #descriptif_jambe
+{
+	display: none;
+	left: 60%;
+	width: 200px;
+	position: absolute;}
+
+
+
+
+/*RESPONSIVE */
+
+@media screen and (max-width:768px)
+{
+	#descriptif_tete, #descriptif_coeur, #descriptif_bras, #descriptif_jambe
+	{
+
+	    background-color: white;
+	    opacity: 0.8;
+	    width: 80%;
+	    left: 0;
+	    margin: 20px;
+	    padding: 20px;
+	    top: 97%;
+	}
+}
